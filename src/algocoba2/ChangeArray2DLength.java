@@ -19,8 +19,6 @@ public class ChangeArray2DLength {
                 copy[i] = new Object[newLength2];
                 System.arraycopy(row, 0, copy[i], 0, row.length);
             }
-        System.out.println("2nL "+copy.length);
-        System.out.println("2nL2 "+copy[0].length);
         
         return copy;
         } 
