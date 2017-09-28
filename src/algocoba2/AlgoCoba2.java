@@ -12,8 +12,11 @@ public class AlgoCoba2 {
             {"4.","Kim","Korea"}        
         };
         
-        System.out.println(country.length);
-        System.out.println(country[0].length);
+        System.out.println("Panjang awal array depan = "+country.length);
+        System.out.println("Panjang awal array belakang = "+country[0].length);
+        /* saya akan mengganti ukuran dari array yang diatas yg awal 
+        ukurannya adalah [5][3] dan saya akan mengubahnya menjadi [6][4]*/
+        
         Object[][] ganti = ChangeArray2DLength.changeLength2D(country, 6, 4);
         
         System.out.println("ganti Length "+ganti.length);
