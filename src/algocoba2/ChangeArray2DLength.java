@@ -2,7 +2,7 @@
 package algocoba2;
 
 public class ChangeArray2DLength {
-    public static Object[][] changeLength2D(final Object [][] a, int n, int m, int newLength, int newLength2){
+    public static Object[][] changeLength2D(Object [][] a, int n, int m, int newLength, int newLength2){
         
         if (n> newLength){
             throw new IllegalArgumentException("Ukuran array yang depan terlalu kecil");
@@ -12,7 +12,7 @@ public class ChangeArray2DLength {
         }
 
         if (a != null) {
-        final Object[][] copy = new Object[newLength][newLength2];
+        Object[][] copy = new Object[newLength][newLength2];
 
             for (int i = 0; i < a.length; i++) {
                 final Object[] row = a[i];
@@ -25,7 +25,7 @@ public class ChangeArray2DLength {
     return null;
     }
 
-    public static Object [][] changeLength2D(final Object[][] a, int newLength, int newLength2){
+    public static Object [][] changeLength2D(Object[][] a, int newLength, int newLength2){
         return changeLength2D(a, a.length, a[0].length, newLength, newLength2);
     }
 }
