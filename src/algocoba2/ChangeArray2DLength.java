@@ -5,10 +5,10 @@ public class ChangeArray2DLength {
     public static Object[][] changeLength2D(final Object [][] a, int n, int m, int newLength, int newLength2){
         
         if (n> newLength){
-            throw new IllegalArgumentException("new length is too small");
+            throw new IllegalArgumentException("Ukuran array yang depan terlalu kecil");
         }
         if(m>newLength2){
-            throw new IllegalArgumentException("new length 2 is too small");
+            throw new IllegalArgumentException("Ukuran array yang belakang terlalu kecil");
         }
 
         if (a != null) {
